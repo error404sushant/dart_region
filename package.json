@@ -3,12 +3,27 @@
     "displayName": "Dart Region",
     "description": "Provides region folding for Dart files using //region and //endregion comments. Created by Sushant.",
     "version": "1.0.0",
-    "author": "Error 404",
-    "publisher": "error",
+    "author": "Sushanta Kumar Behera",
+    "publisher": "SushantaKumarBehera",
+    "license": "MIT",
+    "homepage": "https://github.com/error404sushant/dart_region",
+    "bugs": {
+        "url": "https://github.com/error404sushant/dart_region/issues"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/error404sushant/dart_region"
     },
+    "keywords": [
+        "dart",
+        "region",
+        "folding",
+        "code-folding",
+        "flutter",
+        "regions",
+        "collapse",
+        "expand"
+    ],
     "engines": {
         "vscode": "^1.76.0"
     },
