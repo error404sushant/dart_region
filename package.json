@@ -1,0 +1,120 @@
+{
+    "name": "dart-region",
+    "displayName": "Dart Region",
+    "description": "Provides region folding for Dart files using //region and //endregion comments. Created by Sushant.",
+    "version": "1.0.0",
+    "author": "Error 404",
+    "publisher": "error",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/error404sushant/dart_region"
+    },
+    "engines": {
+        "vscode": "^1.76.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "icon": "imgs/Icon.png",
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "regionfolder.collapseAllRegions",
+                "title": "Dart Region: Collapse all regions."
+            },
+            {
+                "command": "regionfolder.collapseDefault",
+                "title": "Dart Region: Collapse default regions."
+            },
+            {
+                "command": "regionfolder.deleteRegion",
+                "title": "Dart Region: Delete current region tags and contents"
+            },
+            {
+                "command": "regionfolder.removeCurrentRegionTags",
+                "title": "Dart Region: Delete current region tags"
+            },
+            {
+                "command": "regionfolder.wrapWithRegion",
+                "title": "Dart Region: Wrap selection with region tag."
+            },
+            {
+                "command": "regionfolder.wrapWithRegionAndComment",
+                "title": "Dart Region: Wrap with region tag and comment."
+            },
+            {
+                "command": "regionfolder.selectCurrentRegion",
+                "title": "Dart Region: Select current region."
+            },
+            {
+                "command": "regionfolder.selectCurrentRegionContents",
+                "title": "Dart Region: Select current region contents."
+            },
+            {
+                "command": "regionfolder.expandAllRegions",
+                "title": "Dart Region: Expand all regions."
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "regionfolder.wrapWithRegion",
+                "key": "ctrl+m ctrl+r",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "regionfolder.collapseDefault",
+                "key": "ctrl+shift+m ctrl+shift+r",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "regionfolder.expandAllRegions",
+                "key": "cmd+shift+equal",
+                "mac": "cmd+shift+equal",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "regionfolder.collapseAllRegions",
+                "key": "cmd+shift+minus",
+                "mac": "cmd+shift+minus",
+                "when": "editorTextFocus"
+            }
+        ],
+        "configuration": {
+            "title": "Dart Region: Configuration settings",
+            "type": "object",
+            "properties": {
+                "maptz.regionfolder": {
+                    "type": "object",
+                    "description": "Settings used for custom folding.",
+                    "default": {}
+                }
+            }
+        },
+        "configurationDefaults": {}
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src --ext ts",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/glob": "^7.2.0",
+        "@types/mocha": "^9.1.1",
+        "@types/node": "^14.18.37",
+        "@types/vscode": "^1.76.0",
+        "@typescript-eslint/eslint-plugin": "^5.55.0",
+        "@typescript-eslint/parser": "^5.55.0",
+        "@vscode/test-electron": "^2.3.0",
+        "eslint": "^8.36.0",
+        "glob": "^7.2.3",
+        "mocha": "^9.2.2",
+        "typescript": "^4.9.5"
+    }
+}

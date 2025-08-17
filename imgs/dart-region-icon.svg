@@ -1,0 +1,23 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#0175C2" stroke="#013A6B" stroke-width="2"/>
+  
+  <!-- Dart logo inspired design -->
+  <path d="M30 40 L98 40 L98 88 L30 88 Z" fill="#40C4FF" opacity="0.8"/>
+  
+  <!-- Region folding lines -->
+  <line x1="35" y1="50" x2="93" y2="50" stroke="white" stroke-width="2"/>
+  <line x1="35" y1="58" x2="85" y2="58" stroke="white" stroke-width="1.5" opacity="0.7"/>
+  <line x1="35" y1="66" x2="80" y2="66" stroke="white" stroke-width="1.5" opacity="0.7"/>
+  <line x1="35" y1="74" x2="88" y2="74" stroke="white" stroke-width="1.5" opacity="0.7"/>
+  <line x1="35" y1="82" x2="93" y2="82" stroke="white" stroke-width="2"/>
+  
+  <!-- Folding brackets -->
+  <path d="M25 45 L25 50 L30 50" stroke="#FFD700" stroke-width="2" fill="none"/>
+  <path d="M25 82 L25 87 L30 87" stroke="#FFD700" stroke-width="2" fill="none"/>
+  <path d="M103 45 L103 50 L98 50" stroke="#FFD700" stroke-width="2" fill="none"/>
+  <path d="M103 82 L103 87 L98 87" stroke="#FFD700" stroke-width="2" fill="none"/>
+  
+  <!-- Text "D" for Dart -->
+  <text x="64" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">D</text>
+</svg>
